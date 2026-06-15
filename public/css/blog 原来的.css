@@ -1,0 +1,85 @@
+/* 全局样式 */
+body {
+    min-width: 677px;
+}
+
+/* 登录页面样式 */
+h1 {
+    text-align: center;
+}
+
+.log input {
+    display: block;
+    margin: 10px auto;
+}
+
+form.log {
+    width: 300px;
+    padding: 10px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+/* 主页样式 */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav h2 {
+    flex: 1;
+}
+
+nav form {
+    flex: 3;
+    text-align: center;
+}
+
+/* 侧边栏样式 */
+aside {
+    float: left;
+    width: 15%;
+    margin-left: 10%;
+}
+
+aside ul {
+    border: 1px solid black;
+}
+
+/* 主内容区样式 */
+section {
+    float: right;
+    width: 60%;
+    margin-right: 10%;
+}
+
+section form div {
+    border: 1px solid black;
+}
+
+section form input[type="text"] {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+section form textarea {
+    border: 0;
+    width: 100%;
+    resize: none;
+}
+
+section input[type="text"],
+section textarea {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 10px;
+}
+
+/* 博客文章样式 */
+article .b-t {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

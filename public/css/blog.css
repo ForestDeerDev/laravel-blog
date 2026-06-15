@@ -1,0 +1,145 @@
+/* ========== 全局样式 ========== */
+body {
+    min-width: 677px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* ========== 登录页面样式 ========== */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+form.log {
+    width: 320px;
+    padding: 20px;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.log input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ========== 主页导航栏样式 ========== */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #333;
+    color: #fff;
+}
+
+nav h2 {
+    flex: 1;
+    margin: 0;
+}
+
+nav form {
+    flex: 3;
+    text-align: center;
+}
+
+/* ========== 侧边栏样式 ========== */
+aside {
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+aside ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+aside ul li:last-child {
+    border-bottom: none;
+}
+
+/* ========== 主内容区样式 ========== */
+section {
+    float: right;
+    width: 65%;
+    margin-right: 5%;
+}
+
+section form div {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+section form input[type="text"],
+section form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+
+section form input[type="text"]:focus,
+section form textarea:focus {
+    border-color: #6c7b87;
+}
+
+/* ========== 博客文章样式 ========== */
+article .b-t {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+article {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* 登录状态颜色为粉红色 */
+#account {
+    color: hotpink;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 5%;
+}
+
+#account a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+#account a:hover {
+    text-decoration: underline;
+}
