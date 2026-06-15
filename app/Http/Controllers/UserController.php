@@ -43,7 +43,7 @@ class UserController extends Controller
     $user = User::where('email', $account)->first();
     if ($user && Hash::check($password, $user->password)) {
         Auth::login($user);
-        session(['userid' => $user->id]); // 添加 userid 到 Session
+        session(['userid' => $user->id, 'account' => $user->email]); // 添加 userid 和 account 到 Session
         return redirect('/index');
     } else {
         return redirect('/login')->withErrors(['msg' => '账号或密码错误']);
